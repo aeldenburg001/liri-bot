@@ -1,7 +1,6 @@
 # LIRI Bot App
 
-* Video Demo
-  * https://drive.google.com/file/d/1TDNk54vCh87K3IkN8FGgPGnatNGpx2F8/view
+* [Video Demo](https://drive.google.com/file/d/1TDNk54vCh87K3IkN8FGgPGnatNGpx2F8/view)
 
 # How to use this app
 liri.js can take in one of the following commands:
@@ -56,16 +55,13 @@ In this assignment, you will make LIRI. LIRI is like iPhone's SIRI. However, whi
 * Make a new GitHub repository called liri-node-app and clone it to your computer.
 * To retrieve the data that will power this app, you'll need to send requests using the axios package to the Bands in Town, Spotify and OMDB APIs. You'll find these Node packages crucial for your assignment.
 
-* Node-Spotify-API
-  * https://www.npmjs.com/package/node-spotify-api
+* [Node-Spotify-API](https://www.npmjs.com/package/node-spotify-api)
 * Axios
   * You'll use Axios to grab data from the OMDB API and the Bands In Town API
   * http://www.omdbapi.com/
   * http://www.artists.bandsintown.com/bandsintown-api
-* Moment
-  * https://www.npmjs.com/package/moment
-* DotEnv
-  * https://www.npmjs.com/package/dotenv
+* [Moment](https://www.npmjs.com/package/moment)
+* [DotEnv](https://www.npmjs.com/package/dotenv)
 
 # Submission Guide
 
