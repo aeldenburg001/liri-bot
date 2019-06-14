@@ -1,5 +1,8 @@
 # LIRI Bot App
 
+* Video Demo
+  * https://drive.google.com/file/d/1TDNk54vCh87K3IkN8FGgPGnatNGpx2F8/view
+
 # How to use this app
 liri.js can take in one of the following commands:
 * concert-this
