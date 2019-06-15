@@ -28,6 +28,7 @@ liri.js can take in one of the following commands:
   * A preview link of the song from Spotify
   * The album that the song is from
 * If no song is provided then your program will default to "The Sign" by Ace of Base.
+![spotify-this-song](/images/spotify-this-song.png)
 
 #### Example 3) movie-this
     node liri.js movie-this '<movie name here>'
@@ -42,9 +43,11 @@ liri.js can take in one of the following commands:
   * Plot of the movie
   * Actors in the movie
 * If the user doesn't type a movie in, the program will output data for the movie 'Mr. Nobody.'
+![movie-this-none](/images/movie-this-none.png)
  
 #### Example 4) do-what-it-says
     node liri.js do-what-it-says
+![do-what-it-says](/images/do-what-it-says.png)
 * Using the fs Node package, LIRI will take the text inside of random.txt and then use it to call one of LIRI's commands.
   * It should run spotify-this-song for "I Want it That Way," as follows the text in random.txt.
   * Edit the text in random.txt to test out the feature for movie-this and concert-this
