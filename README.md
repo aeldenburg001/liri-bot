@@ -13,6 +13,7 @@ liri.js can take in one of the following commands:
 
 #### Example 1) concert-this
     node liri.js concert-this <artist/band name here>
+![concert-this](/images/concert-this.png)
 * This will search the Bands in Town Artist Events API for an artist and render the following information about each event to the terminal:
   * Name of the venue
   * Venue location
@@ -20,6 +21,7 @@ liri.js can take in one of the following commands:
 
 #### Example 2) spotify-this-song
     node liri.js spotify-this-song '<song name here>'
+![spotify-this](/images/spotify-this.png)
 * This will show the following information about the song in your terminal/bash window
   * Artist(s)
   * The song's name
@@ -29,6 +31,7 @@ liri.js can take in one of the following commands:
 
 #### Example 3) movie-this
     node liri.js movie-this '<movie name here>'
+![movie-this](/images/movie-this.png)
 * This will output the following information to your terminal/bash window:
   * Title of the movie
   * Year the movie came out
