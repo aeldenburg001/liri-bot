@@ -22,6 +22,7 @@ Command
     node liri.js concert-this <artist/band name here>
 
 Example
+
 ![concert-this](/images/concert-this.png)
 
 ### spotify-this-song
@@ -36,11 +37,13 @@ Command
     node liri.js spotify-this-song '<song name here>'
 
 Example
+
 ![spotify-this](/images/spotify-this.png)
 
 * If no song is provided then your program will default to "The Sign" by Ace of Base.
 
 Example
+
 ![spotify-this-song](/images/spotify-this-song.png)
 
 ### movie-this
@@ -59,11 +62,13 @@ Command
     node liri.js movie-this '<movie name here>'
 
 Example
+
 ![movie-this](/images/movie-this.png)
 
 * If the user doesn't type a movie in, the program will output data for the movie 'Mr. Nobody.'
 
 Example
+
 ![movie-this-none](/images/movie-this-none.png)
  
 ### do-what-it-says
@@ -76,6 +81,7 @@ Command
     node liri.js do-what-it-says
 
 Example
+
 ![do-what-it-says](/images/do-what-it-says.png)
 
 ====================================================================================
