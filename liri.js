@@ -1,22 +1,21 @@
 var request = require('request');
 var fs = require('fs');
 var Spotify = require('node-spotify-api');
-
 var dotenv = require("dotenv").config();
 var keys = require("./keys.js");
 
-//moment js
+// moment js
 var moment = require('moment');
 moment().format();
 
-//spotify keys
+// spotify keys
 var spotify = new Spotify(keys.spotify);
 
 //variable for input
 var command = process.argv[2];
 var input = process.argv[3];
 
-// `concert-this`
+// concert-this
 // https://rest.bandsintown.com/artists/adel/events?app_id=codingbootcamp#
 function concertIt(bandQuery) {
 
@@ -36,18 +35,18 @@ function concertIt(bandQuery) {
 
             // console.log(concertData);
             console.log("===============================");
-            // * Name of the venue
+            // Name of the venue
             console.log("Venue Name : " + concertData[0].venue.name +
-            // * Venue location
+            // Venue location
             "\nVenue Location: " + concertData[0].venue.city + "," + concertData[0].venue.country +
-            //  * Date of the Event (use moment to format this as "MM/DD/YYYY")
+            //  Date of the Event (use moment to format this as "MM/DD/YYYY")
             "\nDate of the Event: " + momentDT +
             "\n===============================");
             
         };
     });
 }
-// `spotify-this-song`
+// spotify-this-song
 function spotifyIt(musicSearch) {
 
     //  If no song is provided then your program will default to "The Sign" by Ace of Base.
@@ -65,13 +64,13 @@ function spotifyIt(musicSearch) {
             
                 var musicQuery = data.tracks.items[i];
                 // console.log("===============================");
-                 // * Artist(s)
+                 // Artist(s)
                 console.log("Artist: " + musicQuery.artists[0].name +
-                // * The song's name
+                // The song's name
                 "\nSong Name: " + musicQuery.name +
-                //* A preview link of the song from Spotify
+                // A preview link of the song from Spotify
                 "\nLink to Song: " + musicQuery.preview_url +
-                //* The album that the song is from
+                // The album that the song is from
                 "\nAlbum Name: " + musicQuery.album.name +
                 "\n===============================");
             }
@@ -79,7 +78,7 @@ function spotifyIt(musicSearch) {
     });
 }
 
-    // `movie-this`
+    // movie-this
 function movieIt (movieQuery) {
  
     // If the user doesn't type a movie in, the program will output data for the movie 'Mr.Nobody.'
@@ -99,21 +98,21 @@ function movieIt (movieQuery) {
                                    
             // for (i = 0; i < movieData.length && i < 5; i++) {
                 console.log("===============================");
-            // * Title of the movie.              
+            // Title of the movie.              
                 console.log("Movie Title: " + movieData.Title +
-            // * Year the movie came out.
+            // Year the movie came out.
                 "\nYear: " + movieData.released +
-            // * IMDB Rating of the movie.
+            // IMDB Rating of the movie.
                 "\nIMDB Rating: " + movieData.imdbRating +
-            // * Rotten Tomatoes Rating of the movie.
+            // Rotten Tomatoes Rating of the movie.
                 "\nRotten Tomatoes Rating: " + movieData.Ratings[1].Value +
-            // * Country where the movie was produced.
+            // Country where the movie was produced.
                 "\nCountry: " + movieData.Country +
-            // * Language of the movie.
+            // Language of the movie.
                 "\nLanguage: " + movieData.Language +
-            // * Plot of the movie.
+            // Plot of the movie.
                 "\nPlot: " + movieData.Plot +
-            // * Actors in the movie.
+            // Actors in the movie.
                 "\nActors: " + movieData.Actors +
                 "\n===============================");             
             // };
@@ -155,6 +154,7 @@ var doWhatItSays = function() {
         }
     });
 }
+
 // asigns args to ask for switch case
 ask (command, input);
 
